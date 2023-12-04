@@ -1,0 +1,50 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    height: 410px;
+}
+
+.main-text {
+    text-transform: uppercase;
+    background: linear-gradient(to right, #1e63ca, #00458a, #00458a, #0c5299);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 76px;
+    font-weight: 600;
+}
+
+.text-shadow, .main-img-shadow {
+    display: none;
+}
+
+
+/* ^^^^^^^^^^^^^^^Dark Mode^^^^^^^^^^^^^^^ */
+
+@media (prefers-color-scheme: dark) {
+    .main-text {
+        background: linear-gradient(to right, #8DBBFF, #5DA7F3, #007FFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: absolute;
+        top: 0px;
+        width: 660px;
+    }
+
+    .text-shadow, .main-img-shadow {
+        display: initial;
+    }
+
+    .text-shadow {
+        position: absolute;
+        transform: translate(-60px, -205px);
+    }
+
+    .main-img {
+        position: absolute;
+        right: 0px;
+    }
+    
+    .main-img-shadow {
+        transform: translate(205px, -170px);
+    }
+}

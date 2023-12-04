@@ -1,0 +1,87 @@
+html{
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
+    padding: 20px 0px 0px 0px;
+}
+
+.vertical-line {
+    border-left: 1px solid #474747;
+    border-right: 1px solid #474747;
+    width: 50px;
+    height: 18px;
+}
+
+.container {
+    display: flex;
+    gap: 100px;
+}
+
+.call {
+    display: flex;
+    gap: 30px;
+    font-size: 16px;
+}
+
+.lnk {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+}
+
+.loading-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.usa-flag-icon {
+    width: 30px;
+    height: 15px;
+}
+
+.phone-number {
+    margin: 0px;
+    font-weight: 500;
+}
+
+.lnk, .phone-number {
+    color: #474747;
+}
+
+
+/* ^^^^^^^^^^^^^^^Dark Mode^^^^^^^^^^^^^^^ */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #171F2E;;
+    }
+
+    .lnk, .phone-number {
+        color: #FFF;
+    }
+
+    .vertical-line {
+        border-left: 1px solid #FFFFFF;
+        border-right: 1px solid #FFFFFF;
+    }
+
+    .loading-icon {
+        color: #FFFFFF;
+    }
+}

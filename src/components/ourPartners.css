@@ -1,0 +1,59 @@
+.partners-logo {
+    display: flex;
+    gap: 15px;
+}
+
+.logo-div {
+    display: flex;
+    box-shadow: 0px 0px 4px 0px #00000059;
+    border-radius: 5px;
+    width: 25%;
+}
+
+.prt-logo {
+    margin: auto;
+    display: block;
+}
+
+.partners-container {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.arrow-icon {
+    width: 100px;
+    height: 190px;
+    color: #47474742;
+    margin: 0px 0px 60px 0px;
+}
+
+.head-icon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.partners-head {
+    margin: 0px 0px 15px 0px;
+    font-size: 30px;
+    color: #434343;
+    font-weight: 600;
+}
+
+
+/* ^^^^^^^^^^^^^^^Dark Mode^^^^^^^^^^^^^^^ */
+
+@media (prefers-color-scheme: dark) {
+    .partners-head {
+        color: #FFFFFF;
+    }
+
+    .arrow-icon {
+        color: #E9E9E9;
+    }
+
+    .logo-div {
+        background-color: #FFFFFF;
+    }
+}

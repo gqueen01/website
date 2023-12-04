@@ -1,0 +1,83 @@
+.footer-information {
+    display: flex;
+    gap: 15%;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.footer-horizontal-line {
+    border-top: 1px solid rgba(0, 0, 0, 10%);
+    width: 100%;
+}
+
+.quick-link, .contact-info {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px 0px 15px 0px;
+    color: #474747;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #fbfbfb;
+}
+
+.footer-prg {
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 30px 0px 20px 0px;
+    color: #443344;
+}
+
+.footer-prg2 {
+    text-transform: uppercase;
+    margin: 50px 0px 20px 0px;
+    color: #434343;
+    font-size: 12px;
+    font-weight: 600;
+    width: 175px;
+}
+
+.footer-link, .comp-info {
+    margin: 5px 0px 5px 0px;
+    text-decoration: none;
+    color: #443344;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.rights {
+    text-align: center;
+    margin: 5px;
+    color: #474747;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/* ^^^^^^^^^^^^^^^Dark Mode^^^^^^^^^^^^^^^ */
+
+@media (prefers-color-scheme: dark) {
+    .footer-container {
+        background-color: #171F2E;
+    }
+
+    .footer-horizontal-line {
+        border-top: 1px solid #29313E;
+    }
+
+    .footer-prg, .footer-prg2, .footer-link, .phone, .email {
+        color: #EAF5EA;
+    }
+
+    .quick-link, .contact-info, .place, ul, .rights {
+        color: #FFF;
+    }
+}

@@ -1,0 +1,126 @@
+.horizontal-line {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 10%);
+}
+
+.company-container {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.company-head {
+    margin: 0px 0px 15px 0px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #434343;
+}
+
+.company-section {
+    display: flex;
+    gap: 20px;
+    padding: 0px 100px 0px 40px;
+}
+
+.text-head {
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.text {
+    margin: 0px;
+    line-height: 18px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.company-text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.company-text:hover > .text-div > .text-head {
+    color: #003c9b;
+}
+
+.company-text:hover > .text-vertical-line {
+    height: 92%;
+    border-left: 4px solid #003c9b;
+    border-radius: 2px;
+    margin: 5px 0px 0px 0px
+}
+
+.company-text {
+    display: flex;
+    gap: 20px;
+}
+
+.double-arrow-icon {
+    width: 120px;
+    height: 120px;
+    color: #47474742;
+}
+
+.double-arrow-icon {
+    transform: rotate(89deg);
+}
+
+.company-icon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.company-dark-mode-img, .company-shadow {
+    display: none;
+}
+
+
+/* ^^^^^^^^^^^^^^^Dark Mode^^^^^^^^^^^^^^^ */
+
+@media (prefers-color-scheme: dark) {
+    .company-head, .text {
+        color: #FFFFFF;
+    }
+
+    .double-arrow-icon {
+        color: #E9E9E9;
+    }
+
+    .horizontal-line {
+        border-top: 1px solid #CDC1C0;
+    }
+
+    .company-img {
+        display: none;
+    }
+
+    .company-dark-mode-img, .company-shadow {
+        display: initial;
+    }
+
+    .company-dark-mode-img {
+        position: absolute;
+    }
+
+    .company-shadow {
+        position: absolute;
+        transform: translate(-100px, -195px);
+    }
+
+    .text-head {
+        color: #FFF;
+    }
+
+    .company-text:hover > .text-div > .text-head {
+        color: #FF9900;
+    }
+
+    .company-text:hover > .text-vertical-line {
+        border-left: 4px solid #FF9900;
+    }
+}

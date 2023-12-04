@@ -1,0 +1,128 @@
+.service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.service-text-field {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.texts {
+    background-color: #F8F8F8;
+    padding: 25px 40px 40px 25px;
+    border-radius: 10px;
+}
+
+.service-text-head {
+    font-size: 24px;
+    font-weight: 500;
+    height: 60px;
+}
+
+.service-link {
+    text-decoration: none;
+    color: #2d60f1;
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.service-icon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.star-icon {
+    width: 60px;
+    height: 60px;
+    color: #47474742;
+    margin: 0px 0px 15px;
+}
+
+.service-text {
+    margin: 0px 0px 45px;
+    line-height: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #333333;
+}
+
+.service-png-div {
+    height: 84px;
+    width: 84px;
+    border-radius: 42px;
+    box-shadow: 0px 0px 3px 0px #00000059;
+    display: flex;
+    align-items: center;
+}
+
+.service-png {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-head {
+    margin: 0px 0px 15px 0px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #434343;
+}
+
+.frame-png {
+    display: none;
+}
+
+.service-dark-mode-png, .service-background {
+    display: none;
+}
+
+
+/* ^^^^^^^^^^^^^^^Dark Mode^^^^^^^^^^^^^^^ */
+
+@media (prefers-color-scheme: dark) {
+    .service-head {
+        color: #FFFFFF;
+    }
+
+    .star-icon {
+        color: #E9E9E9;
+    }
+
+    .texts {
+        background-color: #171F2E;
+        border: 1px solid #FFF;
+    }
+
+    .frame-png {
+        display: initial;
+    }
+
+    .service-png {
+        display: none;
+    }
+
+    .service-background {
+        display: initial;
+    }
+
+    .service-dark-mode-png {
+        display: initial;
+        position: absolute;
+        left: 14px;
+        top: 13px;
+    }
+
+    .service-text-head, .service-text {
+        color: #FFF;
+    }
+
+    .service-link {
+        color: #EAF5EA;
+    }
+}
