@@ -11,6 +11,7 @@
     -webkit-text-fill-color: transparent;
     font-size: 76px;
     font-weight: 600;
+    width: 660px;
 }
 
 .text-shadow, .main-img-shadow {
@@ -27,7 +28,6 @@
         -webkit-text-fill-color: transparent;
         position: absolute;
         top: 0px;
-        width: 660px;
     }
 
     .text-shadow, .main-img-shadow {

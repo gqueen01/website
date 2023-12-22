@@ -6,7 +6,6 @@ html{
 
 body {
     margin: 0px;
-    padding: 20px 0px 0px 0px;
 }
 
 .vertical-line {
@@ -37,6 +36,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    padding: 10px 60px 5px 60px;
+    margin-bottom: 150px; 
 }
 
 .links {
@@ -60,8 +63,27 @@ body {
     font-weight: 500;
 }
 
-.lnk, .phone-number {
+.lnk {
     color: #474747;
+}
+
+a.active {
+    color: #00C7FF;
+}
+
+
+.change-color {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color:#FFFFFF;
+}
+
+.change-vertical-color {
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    width: 50px;
+    height: 18px;
 }
 
 
