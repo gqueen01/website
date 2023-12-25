@@ -67,6 +67,8 @@
 @media (prefers-color-scheme: dark) {
     .footer-container {
         background-color: #171F2E;
+        position: relative;
+        z-index: 1;
     }
 
     .footer-horizontal-line {

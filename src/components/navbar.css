@@ -39,7 +39,6 @@ body {
     position: relative;
     z-index: 1;
     padding: 10px 60px 5px 60px;
-    margin-bottom: 150px; 
 }
 
 .links {
@@ -63,7 +62,7 @@ body {
     font-weight: 500;
 }
 
-.lnk {
+.lnk, .phone-number, .loading-icon {
     color: #474747;
 }
 
@@ -86,6 +85,10 @@ a.active {
     height: 18px;
 }
 
+.is-home-page {
+    background-color: #002C4A;
+}
+
 
 /* ^^^^^^^^^^^^^^^Dark Mode^^^^^^^^^^^^^^^ */
 
@@ -105,5 +108,9 @@ a.active {
 
     .loading-icon {
         color: #FFFFFF;
+    }
+   
+    .is-home-page {
+        background-color: #171F2E;
     }
 }

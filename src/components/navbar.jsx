@@ -10,7 +10,7 @@ function Navbar() {
 
     return(
         <>
-            <div className="navbar" style={{backgroundColor: isHomePage ? "#FFF" : "#002C4A"}}>
+            <div className={isHomePage ? "navbar" : "navbar is-home-page"}>
                 <img src="/logo.png" className="logo"/>
                 <div className="container">
                     <div className="links">
@@ -20,9 +20,9 @@ function Navbar() {
                         <NavLink to="/project" className={isHomePage ? "lnk" : "change-color"}>Projects</NavLink>
                     </div>
                     <div className="call">
-                        <p className="phone-number" style={{color: isHomePage ? "#474747" : "#FFFFFF"}}>Call as:(+993) 12468934</p>
+                        <p className="phone-number" style={{color: !isHomePage && "#FFFFFF"}}>Call as:(+993) 12468934</p>
                         <div className={isHomePage ? "vertical-line" : "change-vertical-color"}>
-                            <CgSearchLoading className="loading-icon" style={{color: isHomePage ? "#474747" : "#FFFFFF"}}/>
+                            <CgSearchLoading className="loading-icon" style={{color: !isHomePage && "#FFFFFF"}}/>
                         </div>
                         <US title="United States" className="usa-flag-icon"/>
                     </div>

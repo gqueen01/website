@@ -9,6 +9,7 @@ import './components/ourPartners.css'
 import './components/ourServices.css'
 import './components/footer.css'
 import './components/ourWorks.css'
+import './components/aboutCompanyPage.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
